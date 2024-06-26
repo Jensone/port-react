@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles.css";
 import "animate.css";
 import Home from "./pages/Home";
+import Skills from "./pages/Skills";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Création du router
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/skills",
-    element: <div> Skills</div>,
+    element: <Skills />,
   },
   {
     path: "/contact",
