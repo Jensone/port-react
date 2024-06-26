@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Project from "../components/Project";
+import Nav from "../components/Nav";
 
 /**
  * Skills:
@@ -35,7 +36,8 @@ export default function Skills() {
         },
     ];
     return (
-        <>
+        <main>
+            <Nav />
             <section className="flex gap-5 px-5 py-10">
                 <div className="w-1/3">
                     <h1 className="mb-5 text-3xl font-bold text-white">Skillset</h1>
@@ -64,6 +66,6 @@ export default function Skills() {
             <section>
                 <Project prop={choice}/>
             </section>
-        </>
+        </main>
     )
 }
