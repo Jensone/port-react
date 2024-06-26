@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./styles.css";
+import "animate.css";
+import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Création du router
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/skills",
-    element: <div>Skills</div>,
+    element: <div> Skills</div>,
   },
   {
     path: "/contact",
@@ -22,6 +23,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>,
 );
