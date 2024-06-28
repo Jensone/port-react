@@ -5,6 +5,7 @@ import "animate.css";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Contact from "./pages/Contact";
 
 // Création du router
 const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div>Contact</div>,
+    element: <Contact />,
   },
 ]);
 
